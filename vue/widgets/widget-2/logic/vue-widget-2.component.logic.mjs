@@ -6,6 +6,18 @@ export const component = {
 		return {
 			title: "Vue Widget 2",
 			pokemons: ["Pikachu", "Wartortle", "Handlerpluff", "Onixindo"],
+			random: 0,
 		};
+	},
+	methods: {
+		shiftPokemons() {
+			this.pokemons.push(this.pokemons.shift());
+		},
+		gimmeDate(d) {
+			alert(d);
+		},
+		randomNum() {
+			this.random = Math.round(Math.random());
+		},
 	},
 };

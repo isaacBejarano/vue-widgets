@@ -7,6 +7,36 @@ const template1 = `
 	<ul style="${style3}">
 		<li v-for="pokemon in pokemons" style="${style4}">{{ pokemon }}</li>
 	</ul>
+	
+	<button
+		style="margin-top: .5rem;
+		padding: .5rem;
+		cursor: pointer;"
+		@click="shiftPokemons">
+			Shuffle Pokemons!
+	</button>
+
+	<button
+		style="margin-left: .5rem;
+		padding: .5rem;
+		cursor: pointer;"
+		@click="gimmeDate(new Date())">
+			Alert this moment!
+	</button>
+
+	<button
+		style="margin-left: .5rem;
+		padding: .5rem;
+		cursor: pointer;"
+		@click="randomNum()">
+			Random "1" shows
+	</button>
+
+	<small
+		style="margin-left: .5rem;"
+		v-if="random>0">
+			Random is {{ random }}
+	</small>
 </div>
 `;
 
