@@ -1,0 +1,7 @@
+{
+	"name": "vue-widgets",
+	"version": "1.0.0",
+	"description": "stand-alone Vue.js ES6 modular and decoupled widget examples",
+	"author": "Isaac Bejarano",
+	"license": "MIT"
+}

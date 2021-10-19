@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vue 3.0 - stand-alone Widget</title>
+		<!-- VUE from CDN -->
+		<script src="https://unpkg.com/vue@next"></script>
+		<style>
+			body {
+				box-sizing: border-box;
+				overflow: visible;
+				background-color: wheat;
+			}
+			h1 {
+				padding-bottom: 0.5rem;
+				border: 0 solid orangered;
+				border-width: 0 0 2px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Vue 3.0 - stand-alone Widget</h1>
+
+		<h2>Static Content</h2>
+		<p>
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci veritatis ipsam officiis vitae! Nulla, beatae
+			impedit eveniet ducimus iste animi minus a nemo excepturi illo in optio fugit rem necessitatibus! Itaque optio
+			accusantium...
+		</p>
+
+		<!-- VUE outlet - 1 -->
+		<div id="app-widget-1"></div>
+
+		<hr />
+
+		<h2>More Static Content</h2>
+		<p>
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci veritatis ipsam officiis vitae! Nulla, beatae
+			impedit eveniet ducimus iste animi minus a nemo excepturi illo in optio fugit rem necessitatibus! Itaque optio
+			accusantium...
+		</p>
+
+		<!-- VUE outlet - 2 -->
+		<div id="app-widget-2"></div>
+
+		<!-- VUE module load -->
+		<script type="module" src="./vue/widgets/widget-1/vue-widget-1.module.mjs"></script>
+		<script type="module" src="./vue/widgets/widget-2/vue-widget-2.module.mjs"></script>
+	</body>
+</html>
