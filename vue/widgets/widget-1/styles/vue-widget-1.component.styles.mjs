@@ -1,5 +1,5 @@
 const style1 = `
-	color: darkmagenta;
+	color: green;
 	background-color: palegreen;
 	font-family: Arial, sans-serif;
 	font-weight: lighter;
